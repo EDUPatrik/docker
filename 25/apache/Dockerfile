@@ -1,6 +1,14 @@
 # DO NOT EDIT: created by update.sh from Dockerfile-debian.template
 FROM php:8.1-apache-bullseye
 
+RUN set -ex; \
+    \
+    apt-get install -y --no-install-recommends \
+        nano \
+        
+    ; \
+    
+    
 # entrypoint.sh and cron.sh dependencies
 RUN set -ex; \
     \
